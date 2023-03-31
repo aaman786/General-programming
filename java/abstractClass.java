@@ -27,14 +27,22 @@ class Derived extends Base {
     public void greet2() {
         System.out.println("Hello Beautiful users...");
     }
+
+    void runn() {
+        System.out.println("I am running");
+    }
 }
 
 public class abstractClass {
 
     public static void main(String[] args) {
         Derived d = new Derived();
-
         d.greet();
         d.greet2();
+
+        // Base base = new Derived(); // --> this is allowed
+        // base.greet(); // --> this is allowed
+        // base.runn(); // --> can't do this
+
     }
 }

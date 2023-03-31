@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class arrayList {
     public static void main(String[] args) {
@@ -8,10 +9,11 @@ public class arrayList {
         l.add(14);
         l.add(15);
 
-        for (int i = 0; i < l.size(); i++) {
-            System.out.print(l.get(i));
+        Iterator itr = l.iterator();
+
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
         }
-        System.out.println();
 
         // l.contains(14); // return boolean value
         // l.indexOf(15);

@@ -38,6 +38,7 @@ class Programmer : public Human
 public:
     void skills()
     {
+        Human ::skills();
         cout << "C, C++, JAva" << endl;
     }
 };
@@ -47,8 +48,8 @@ int main(int argc, char const *argv[])
     Human *hum;
     Programmer prog;
 
-    Human human(4);
-    human.getter();
+    // Human human(4);
+    // human.getter();
 
     hum = &prog;
     hum->skills();

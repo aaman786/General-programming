@@ -8,7 +8,7 @@ public class replacingWithAdjLetters {
     }
 
     public static void main(String[] args) {
-        String initialWord = "Hello";
+        String initialWord = "Hello World";
         char[] arr = new char[initialWord.length()];
         arr = initialWord.toCharArray();
 
@@ -17,7 +17,7 @@ public class replacingWithAdjLetters {
 
         char c;
         while (i < initialWord.length()) {
-            if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u') {
+            if (arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u' || arr[i] == ' ') {
                 adjWord += arr[i];
             } else {
                 c = giveAdjacent(arr[i]);

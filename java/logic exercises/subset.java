@@ -40,5 +40,6 @@ class subset {
 		int r = 3; // no of sets require
 		int n = arr.length;
 		printCombination(arr, n, r);
+
 	}
 }

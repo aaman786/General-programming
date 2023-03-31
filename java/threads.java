@@ -10,9 +10,13 @@
  -> It is the process of spawning more than one process on a system.
 
     Multitasking...
- -> Sharing of system between number of users.    
+ -> Sharing of Server system between number of users.    
  -> Both the multiprocessing and multithreading is used to 
     achive multitasking.
+
+    // Achieving interfaces in java
+    --> by extending thread class
+    --> using runnable interface.
 
  */
 

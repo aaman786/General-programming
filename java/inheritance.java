@@ -11,11 +11,12 @@ class Base {
 }
 
 class Derived extends Base {
-    int j;
+    int j = 22;
 
-    public Derived() {
+    public int Derived() {
         super.runMethod();
         System.out.println("I am a derived class constructor");
+        return j;
     }
 }
 

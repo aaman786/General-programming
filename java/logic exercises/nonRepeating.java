@@ -9,7 +9,7 @@ public class nonRepeating {
 
         for (int i = 0; i < arr.length; i++) {
 
-            for (int j = arr.length - 1; i < j; j--) {
+            for (int j = arr.length - 1; j > i; j--) {
                 if (visited[i]) {
                     break;
                 } else if (arr[i] == arr[j]) {
